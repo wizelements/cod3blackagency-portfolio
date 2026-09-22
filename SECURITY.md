@@ -1,57 +1,41 @@
 # Security Policy
 
-## Supported Versions
+## Scope
 
-| Version | Supported          |
-| ------- | ------------------ |
-| Latest  | Yes                |
+This repository documents Cod3Black Agency's portfolio and delivery practices. Security controls differ by product, maturity, architecture, and deployment, so this file does **not** claim that every repository has identical scanning, authentication, monitoring, or patching controls.
+
+For an issue in a specific product, use that repository's security policy when one exists.
 
 ## Reporting a Vulnerability
 
-Cod3BlackAgency takes security seriously. If you discover a security vulnerability in any of our repositories, please report it responsibly.
+Do not open a public issue containing exploit details, credentials, private data, or reproducible sensitive information.
 
-### How to Report
+Preferred reporting path:
 
-1. **Do not** open a public GitHub issue for security vulnerabilities
-2. Email security concerns to: [security@cod3blackagency.com]
-3. Include:
-   - Repository name
-   - Description of the vulnerability
-   - Steps to reproduce
-   - Potential impact
-   - Suggested fix (if any)
+1. Use the affected repository's private GitHub Security Advisory flow when enabled.
+2. Otherwise email **contact@cod3blackagency.com** with `SECURITY` in the subject.
+3. Include the affected repository/surface, impact, reproduction steps, and any suggested remediation.
 
-### Response Timeline
+Do not include real customer secrets or unnecessary personal data in a report.
 
-- **Acknowledgment**: Within 48 hours
-- **Initial Assessment**: Within 7 days
-- **Resolution Target**: Within 30 days (severity dependent)
+## Handling Standard
 
-### Scope
+Security reports should be triaged by severity and evidence. Remediation priority depends on exploitability, exposed data, affected users, and whether the issue reaches a production surface.
 
-This policy applies to all Cod3BlackAgency repositories:
-- sd-studio-web
-- family-powerhouse
-- Ownly
-- solovibe
-- cba-ai-platform
-- freelance-dashboard
+No fixed remediation deadline is promised here because severity and deployment context vary. Critical production exposure should receive priority over lower-risk development-only findings.
 
-### Recognition
+## Portfolio Security Principles
 
-We appreciate responsible disclosure and will acknowledge security researchers who report valid vulnerabilities (with permission).
+Current engineering expectations include:
 
-## Security Practices
+- no committed production secrets;
+- least-privilege credentials and server-side secret handling;
+- input validation at trust boundaries;
+- authentication/authorization where the product requires it;
+- dependency and code scanning where configured;
+- HTTPS for public production web deployments;
+- webhook signature verification where applicable;
+- explicit production versus prototype status;
+- evidence-based security claims rather than blanket assertions.
 
-All Cod3BlackAgency projects implement:
-
-- Dependency scanning via Dependabot
-- Code scanning via GitHub CodeQL
-- Environment variable management (no secrets in code)
-- HTTPS-only deployments
-- Input validation and sanitization
-- Authentication best practices (where applicable)
-
-## Dependencies
-
-We regularly update dependencies to patch known vulnerabilities. Critical security updates are prioritized and deployed within 72 hours of disclosure.
+The presence of this policy is not itself proof that every control above is implemented in every repository.
