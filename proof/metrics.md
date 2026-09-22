@@ -1,94 +1,104 @@
 # Proof: Metrics and Validation
 
-Evidence of engineering quality across Cod3BlackAgency projects.
+This file defines what counts as portfolio evidence.
 
----
+## Evidence Policy
 
-## Performance Targets
+A metric is a **result** only when it was actually measured against a named build/deployment, with a date and reproducible method. Desired values must be labeled **targets**.
 
-| Project | Lighthouse Performance | Lighthouse Accessibility | LCP | CLS |
-|---------|------------------------|--------------------------|-----|-----|
-| SD Studio Web | 90+ | 95+ | < 2.5s | < 0.1 |
-| Family Powerhouse | 85+ | 95+ | < 3.0s | < 0.1 |
-| Ownly | 85+ | 90+ | < 3.0s | < 0.1 |
-| Solovibe | 90+ | 95+ | < 2.0s | < 0.1 |
+The portfolio must not convert:
 
-*Targets based on production deployments with real data.*
+- README claims into measured results;
+- CI configuration into proof that a current run passed;
+- a deployment URL into proof that the product works end-to-end;
+- an upstream project's capabilities into Cod3Black-authored capability;
+- historical measurements into current measurements.
 
----
+## Currently Verified Infrastructure Facts
 
-## Test Coverage
+| System | Verified fact | Evidence source |
+| --- | --- | --- |
+| Cod3Black Agency / `c3bai` | Inspected production deployment reported **READY** | Connected Vercel account |
+| Taste of Gratitude / `Gratog` | Inspected production deployment reported **READY** | Connected Vercel account |
+| Taste of Gratitude / `Gratog` | `tasteofgratitude.shop` is a verified project domain | Connected Vercel account |
+| GitHub portfolio | 121 owned repositories: 57 active, 64 archived after governance audit | Authenticated GitHub account |
 
-| Project | Unit Tests | Integration Tests | E2E Tests | Coverage Target |
-|---------|------------|-------------------|-----------|-----------------|
-| SD Studio Web | Yes | Partial | No | 60% |
-| Family Powerhouse | Yes | Yes | Yes (Playwright) | 70% |
-| Ownly | Yes | Yes | Partial | 65% |
-| Solovibe | Yes | Yes | No | 60% |
-| Freelance Dashboard | Yes (pytest) | Yes | No | 70% |
+These facts do **not** imply a Lighthouse score, uptime SLA, test coverage percentage, or business outcome unless those are separately measured.
 
----
+## Required Format for Future Performance Evidence
 
-## CI/CD Status
+Record:
 
-| Project | Lint | Typecheck | Test | Build | Security Scan |
-|---------|------|-----------|------|-------|---------------|
-| SD Studio Web | Pass | Pass | Pass | Pass | Enabled |
-| Family Powerhouse | Pass | Pass | Pass | Pass | Enabled |
-| Ownly | Pass | Pass | Pass | Pass | Enabled |
-| Solovibe | Pass | Pass | Pass | Pass | Enabled |
-| Freelance Dashboard | Pass | N/A | Pass | Pass | Enabled |
+- project;
+- commit SHA;
+- deployment ID/URL;
+- environment;
+- date/time;
+- tool and version;
+- exact command/config;
+- result;
+- threshold/target;
+- pass/fail;
+- evidence artifact or link.
 
-*All repositories have GitHub Actions workflows for automated validation.*
+Example:
 
----
+```text
+Project: example
+Commit: abc123
+Environment: production
+Measurement: Lighthouse mobile
+Tool/version: Lighthouse 13.x
+Date: YYYY-MM-DD
+Performance: 91
+Accessibility: 98
+Target: >= 90 / >= 95
+Result: PASS
+```
 
-## Security
+## Test and CI Evidence
 
-- **Dependency Scanning**: Dependabot enabled on all repositories
-- **Code Scanning**: CodeQL analysis on push and PR
-- **Secret Detection**: No secrets committed (verified via git-secrets)
-- **HTTPS**: All deployments enforce HTTPS
+Do not write `Pass` because a workflow file exists. Record the actual workflow run, local command output, or certification artifact.
 
----
-
-## Uptime
-
-| Project | Hosting | Target Uptime | Monitoring |
-|---------|---------|---------------|------------|
-| SD Studio Web | Vercel | 99.9% | Vercel Analytics |
-| Family Powerhouse | Vercel | 99.9% | Vercel Analytics |
-| Ownly | Vercel | 99.9% | Vercel Analytics |
-| Solovibe | Self-hosted | 99% | UptimeRobot |
-
----
-
-## Release History
-
-All flagship projects follow semantic versioning:
-
-- **SD Studio Web**: v1.x.x (production)
-- **Family Powerhouse**: v0.x.x (active development)
-- **Ownly**: v1.x.x (production)
-- **Solovibe**: v1.x.x (fork, customized)
-
-Changelogs maintained in each repository.
-
----
-
-## Validation Commands
-
-Verify any project locally:
+Useful gates include, as appropriate:
 
 ```bash
-# Clone and install
-git clone https://github.com/wizelements/[project].git
-cd [project]
-npm install  # or pnpm install
-
-# Run validation
-npm run lint      # Code style
-npm run typecheck # Type safety (TypeScript projects)
-npm run test      # Test suite
-npm run build     # Production build
+npm run lint
+npm run typecheck
+npm test
+npm run build
+npm run test:e2e
+git diff --check
 ```
+
+Different repositories may use different stacks and therefore different verification commands.
+
+## Security Evidence
+
+Security claims require specific evidence such as:
+
+- secret-scanning configuration/results;
+- CodeQL or equivalent run;
+- dependency-audit output;
+- authorization tests;
+- webhook-signature tests;
+- threat model or security review;
+- production configuration inspection.
+
+There is no portfolio-wide claim that every repository has every security control.
+
+## Business Evidence
+
+The strongest proof is not technical vanity metrics. For commercial work, track outcomes such as:
+
+- qualified leads captured;
+- conversion rate;
+- checkout completion;
+- revenue processed;
+- manual hours eliminated;
+- response time reduced;
+- operational errors prevented;
+- repeat-customer or retention lift;
+- verified time saved.
+
+Where business metrics are unavailable, say so rather than substituting technical activity as economic proof.
