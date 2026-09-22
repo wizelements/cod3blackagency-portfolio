@@ -1,139 +1,60 @@
-# Demo Information
+# Demo and Verification Surfaces
 
-Live demos and access instructions for Cod3BlackAgency projects.
+This document lists demo surfaces that are currently supported by evidence. A repository or deployment is not labeled "production" merely because it exists.
 
----
+## Verified Public Surfaces
 
-## SD Studio Web
+### Cod3Black Agency
 
-**URL**: [https://sd-studio-web.vercel.app](https://sd-studio-web.vercel.app)
+- Repository: `wizelements/c3bai`
+- Production alias: https://c3bai-nu.vercel.app
+- Verification: connected Vercel account reported the latest inspected production deployment as **READY**.
+- Purpose: commercial front door, lead funnel, case-study/offer surfaces, and agency operations entry point.
 
-**Access**: Public (no authentication required)
+### Taste of Gratitude / Gratog
 
-**Demo Flow**:
-1. Enter a text prompt describing the image
-2. Adjust generation parameters (optional)
-3. Click Generate
-4. View result in gallery
-5. Download or regenerate
+- Repository: `wizelements/Gratog`
+- Customer domain: https://tasteofgratitude.shop
+- Verification: Vercel reports `tasteofgratitude.shop` as a **verified domain** attached to the `Gratog` project, and the inspected production deployment was **READY**.
+- Purpose: commerce and operational experience for the live beverage and sea moss brand.
 
-**Limitations**:
-- Requires active Stable Diffusion API endpoint
-- Demo may have rate limits
-- Large images take longer to generate
+## Public Repositories Without a Claimed Production Demo Here
 
----
+These repositories remain useful portfolio evidence, but this file does not claim a currently verified public production URL unless one is independently confirmed:
 
-## Family Powerhouse
+- `nhbbi-crm`
+- `asca-pwa`
+- `jds-horse-ranch-pwa`
+- `sd-studio-web`
+- `family-powerhouse`
+- `Ownly`
+- `notionexporterpdf`
+- `saas-opportunity-bot`
 
-**URL**: Coming soon
+## Private / Proprietary Systems
 
-**Access**: Demo credentials available on request
+The following are intentionally not exposed here as public demos:
 
-**Demo Flow**:
-1. Login with demo account
-2. View family dashboard
-3. Create/edit calendar events
-4. Assign and complete tasks
-5. Explore settings and roles
+- OPEE
+- Cod3Black Signal
+- MusiCards
+- Cod3Black internal operating platform
+- OpenClaw/OPEE supporting configuration and workspaces
 
-**Limitations**:
-- Demo data resets periodically
-- Some features disabled in demo mode
+Demonstrations of private systems should use sanitized data, bounded permissions, and explicit evidence of what is live versus simulated.
 
----
+## Historical and Upstream References
 
-## Ownly
+Archived repositories such as `solovibe`, `cba-ai-platform`, and `freelance-dashboard` are not current flagship demos. Upstream/reference code is not presented as original Cod3Black product work.
 
-**URL**: Coming soon
+## Demo Evidence Rule
 
-**Access**: Demo credentials available on request
+Every demo claim should answer:
 
-**Demo Flow**:
-1. Browse product catalog
-2. Add items to cart
-3. Proceed to checkout (test mode)
-4. Complete order with test card
-5. View order confirmation
+1. What user outcome is being demonstrated?
+2. What repository/deployment produced it?
+3. What is live, simulated, mocked, or incomplete?
+4. What evidence proves the current state?
+5. What limitation would invalidate an overly broad claim?
 
-**Test Payment**:
-- Card: 4242 4242 4242 4242
-- Expiry: Any future date
-- CVC: Any 3 digits
-
-**Limitations**:
-- No real payments processed
-- Inventory resets daily
-
----
-
-## Solovibe
-
-**URL**: Self-hosted only
-
-**Access**: Deploy your own instance
-
-**Deployment**:
-```bash
-git clone https://github.com/wizelements/solovibe.git
-cd solovibe
-docker-compose up -d
-# Access at http://localhost:3000
-```
-
-**Requirements**:
-- Docker and Docker Compose
-- Ollama running locally (or OpenAI API key)
-
----
-
-## CBA AI Platform
-
-**URL**: Internal use only
-
-**Access**: Not available for public demo
-
-**Description**: Agency platform for managing AI-assisted development workflows. Available for licensed deployment.
-
----
-
-## Freelance Dashboard
-
-**URL**: Private deployment
-
-**Access**: Not available for public demo
-
-**Description**: Internal tool for client and project management. Source available for licensed use.
-
----
-
-## Requesting Demo Access
-
-For projects with restricted access:
-
-1. Email [contact@cod3blackagency.com]
-2. Include:
-   - Which project you want to demo
-   - Your use case
-   - Company/organization (if applicable)
-3. Credentials provided within 24 hours
-
----
-
-## 60-Second Demo Script Template
-
-Use this format for video demos:
-
-```
-[0:00-0:10] Problem Statement
-"Users need [X] but current solutions [limitation]."
-
-[0:10-0:30] Solution Overview
-"[Project] solves this by [key features]."
-
-[0:30-0:50] Live Demo
-[Show primary user flow]
-
-[0:50-0:60] Technical Highlight + CTA
-"Built with [stack]. Code at github.com/wizelements/[project]."
-```
+Video demos and screenshots should include a capture date and the relevant deployment or commit when practical.
