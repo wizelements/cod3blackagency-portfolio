@@ -1,128 +1,119 @@
-# Cod3BlackAgency
+# Cod3Black Agency
 
-**Full-stack product studio specializing in AI-integrated web applications, automation systems, and production-ready MVPs.**
+**Outcome-focused software, automation, AI systems, and product infrastructure.**
 
-We build software that ships. Every project includes deployment infrastructure, documentation, and handoff-ready codebases.
+Cod3Black Agency builds systems meant to create measurable business value: more revenue, less manual work, better operational capacity, stronger customer experiences, or reusable technical leverage.
 
----
-
-## Flagship Projects
-
-| Project | Description | Stack | Status | Demo |
-|---------|-------------|-------|--------|------|
-| [SD Studio Web](https://github.com/wizelements/sd-studio-web) | AI image generation interface with Stable Diffusion integration | Next.js, TypeScript, Tailwind | Production | [Live](https://sd-studio-web.vercel.app) |
-| [Family Powerhouse](https://github.com/wizelements/family-powerhouse) | Family management platform with scheduling, tasks, and shared resources | Next.js, Prisma, PostgreSQL | Production | Coming Soon |
-| [Ownly](https://github.com/wizelements/Ownly) | Full-featured eCommerce platform with inventory and payment processing | Next.js, TypeScript, Stripe | Production | Coming Soon |
-| [Solovibe](https://github.com/wizelements/solovibe) | Self-hosted AI chat interface supporting Ollama and OpenAI | SvelteKit, TypeScript | Production | Self-hosted |
-| [CBA AI Platform](https://github.com/wizelements/cba-ai-platform) | Agency platform for AI-assisted development workflows | Next.js, TypeScript | Development | Internal |
-| [Freelance Dashboard](https://github.com/wizelements/freelance-dashboard) | Client and project management for freelancers | Python, Flask, SQLite | Production | Private |
+This portfolio is intentionally curated. Historical experiments, upstream/reference repositories, superseded implementations, and placeholders are archived instead of being presented as current products.
 
 ---
 
-## Capabilities
+## Current Systems
 
-### What We Build
-
-- **AI-Integrated Applications** - LLM interfaces, image generation tools, automation pipelines
-- **Production Web Apps** - Next.js/React frontends with robust backends
-- **eCommerce Platforms** - Payment processing, inventory, order management
-- **Internal Tools** - Dashboards, admin panels, workflow automation
-- **API Development** - RESTful services, authentication, third-party integrations
-
-### Tech Stack
-
-| Layer | Technologies |
-|-------|-------------|
-| Frontend | Next.js, React, SvelteKit, TypeScript, Tailwind CSS |
-| Backend | Node.js, Python/Flask, Prisma ORM |
-| Database | PostgreSQL, SQLite, MongoDB |
-| AI/ML | OpenAI API, Ollama, Stable Diffusion |
-| Infrastructure | Vercel, Docker, GitHub Actions |
-| Testing | Playwright, Jest, pytest |
+| System | Role | Current status |
+| --- | --- | --- |
+| [Cod3Black Agency](https://github.com/wizelements/c3bai) | Commercial front door for websites, funnels, dashboards, automation, and AI business systems | Active |
+| [Taste of Gratitude / Gratog](https://github.com/wizelements/Gratog) | Commerce and operations platform for the live beverage and sea moss brand | Active production system — [tasteofgratitude.shop](https://tasteofgratitude.shop) |
+| [NHBBI CRM](https://github.com/wizelements/nhbbi-crm) | CRM, membership, payment, and communications platform | Active |
+| [ASCA PWA](https://github.com/wizelements/asca-pwa) | PWA + admin system for Atlanta Saddle Club Association | Active |
+| [JD's Horse Ranch PWA](https://github.com/wizelements/jds-horse-ranch-pwa) | Mobile-first client PWA and contact workflow | Active client system |
+| **OPEE** | Governed outcome operating system for routing, execution, evidence, verification, recovery, and value measurement | Active proprietary system |
+| **Cod3Black Signal** | Structured lead-intelligence and diagnosis edge | Active private system |
+| **MusiCards** | Deterministic music-learning game studio with explicit production gates and governed AI boundaries | Active private product |
 
 ---
 
-## Engineering Standards
+## Retained Product Assets
 
-Every Cod3BlackAgency repository includes:
+These remain useful, reusable, or commercially interesting, but they are not the primary current product centers.
 
-- CI/CD with GitHub Actions (lint, typecheck, test, build)
-- Security scanning via CodeQL and Dependabot
-- Environment configuration with `.env.example`
-- Deployment documentation and Vercel integration
-- Semantic versioning and changelog maintenance
-
-**Evaluate our engineering:**
-- [CI Workflows](https://github.com/wizelements/family-powerhouse/actions)
-- [Test Coverage](https://github.com/wizelements/family-powerhouse/tree/main/tests)
-- [Documentation Standards](https://github.com/wizelements/solovibe/blob/main/README.md)
+| Asset | Purpose |
+| --- | --- |
+| [Ownly](https://github.com/wizelements/Ownly) | Production-minded SaaS starter foundation |
+| [SD Studio Web](https://github.com/wizelements/sd-studio-web) | Remote Stable Diffusion web interface |
+| [Family Powerhouse](https://github.com/wizelements/family-powerhouse) | Multi-tenant family coordination and finance platform |
+| [Notion Perfect PDF](https://github.com/wizelements/notionexporterpdf) | Browser extension for robust Notion PDF export |
+| [SaaS Opportunity Bot](https://github.com/wizelements/saas-opportunity-bot) | Automated pain-point and opportunity discovery |
+| [LinkBio](https://github.com/wizelements/Linkbio) | Small-business landing page and lead-capture system |
 
 ---
 
-## Case Studies
+## What We Build
 
-Detailed breakdowns of select projects:
-
-- [SD Studio Web](/case-studies/sd-studio-web.md) - Building a production AI image generation interface
-- [Family Powerhouse](/case-studies/family-powerhouse.md) - Full-stack family management with Prisma
-- [Solovibe](/case-studies/solovibe.md) - Self-hosted AI chat with multi-provider support
-
----
-
-## Process
-
-How we deliver projects:
-
-1. **Discovery** - Requirements gathering, technical constraints, success criteria
-2. **Architecture** - System design, tech stack selection, timeline
-3. **Build** - Iterative development with continuous deployment
-4. **QA** - Automated testing, manual review, performance validation
-5. **Deploy** - Production infrastructure, monitoring, documentation
-6. **Handoff** - Repository transfer, deployment playbooks, maintenance docs
+- **Business systems** — websites, commerce, booking, CRM, admin, reporting
+- **AI-enabled workflows** — classification, diagnosis, recommendations, governed execution
+- **Automation** — repetitive operational work turned into repeatable systems
+- **Internal tools** — dashboards, control planes, workflow interfaces
+- **Product infrastructure** — authentication, payments, data, APIs, deployment, observability
+- **Reusable components** — utilities and patterns that reduce future delivery cost
 
 ---
 
-## Commercial Engagement
+## Engineering Standard
 
-### Deliverables
+The standard is not “code exists” or “the page loads.”
 
-Every project handoff includes:
-- Production-deployed application
-- Source code repository with full history
-- Environment configuration documentation
-- Deployment playbook (Vercel/Docker/custom)
-- API documentation (if applicable)
-- 30-day post-launch support
+A capability is considered complete only when its intended outcome works through the real architecture and its current limitations are stated truthfully.
 
-### Licensing
+Current delivery principles:
 
-- **Client Projects**: Full ownership transfer with perpetual license
-- **Open Source**: MIT License (see individual repos)
-- **Internal Tools**: Proprietary (available for licensing)
+1. Define the user/business outcome and success condition.
+2. Separate verified facts from assumptions, stale information, and unknowns.
+3. Use the smallest complete architecture that can satisfy the requirement.
+4. Keep secrets out of source control.
+5. Add automated verification appropriate to the risk and maturity of the project.
+6. Distinguish prototypes, active development, staging, and production.
+7. Preserve evidence for consequential completion claims.
+8. Avoid hidden manual completion paths.
+9. Document deployment and handoff requirements.
+10. Prefer reusable systems over one-off work when the economics justify it.
+
+Individual repositories state their actual test, CI, deployment, and production status. This portfolio does not claim identical maturity across every project.
+
+---
+
+## Delivery Process
+
+**Observe → Prove → Plan → Build → Verify → Deploy → Measure → Improve**
+
+Typical engagement flow:
+
+1. **Discovery** — objective, users, constraints, revenue/value path
+2. **Evidence** — verify the current system and identify unknowns
+3. **Architecture** — choose the smallest secure solution
+4. **Build** — implement in bounded, testable increments
+5. **Verification** — test the intended outcome, not merely the component
+6. **Deployment** — release through the intended production path
+7. **Handoff** — source, configuration, operating notes, known limitations
+8. **Iteration** — improve based on usage, revenue, time saved, or operational evidence
+
+---
+
+## Portfolio Governance
+
+The GitHub account was audited in September 2026.
+
+- Active repositories represent current products, supporting systems, or retained assets.
+- Superseded implementations are archived and point to canonical replacements where appropriate.
+- Upstream/reference repositories are archived rather than presented as original Cod3Black products.
+- Historical coursework and old experiments are preserved as history, not marketed as active work.
+- Empty or obsolete placeholders are retired rather than allowed to imply nonexistent capability.
+
+Canonical product families include:
+
+- Taste of Gratitude → `Gratog`
+- MusiCards → `musicards`
+- NHBBI → `nhbbi-crm`
+- Cod3Black platform → `cod3blackagency` / `c3bai`
+- Cod3Black acquisition intelligence → `cod3black-signal`
 
 ---
 
 ## Contact
 
-- **Email**: [contact@cod3blackagency.com]
-- **GitHub**: [github.com/wizelements](https://github.com/wizelements)
-- **Schedule**: [Book a call]
+- GitHub: [wizelements](https://github.com/wizelements)
+- Email: contact@cod3blackagency.com
 
 ---
 
-## Repository Structure
-
-```
-cod3blackagency/
-├── portfolio/           # This repo - studio overview and case studies
-├── sd-studio-web/       # AI image generation (flagship)
-├── family-powerhouse/   # Family management platform (flagship)
-├── ownly/               # eCommerce platform (flagship)
-├── solovibe/            # AI chat interface (flagship)
-├── cba-ai-platform/     # Agency platform (flagship)
-└── freelance-dashboard/ # Client management (private flagship)
-```
-
----
-
-**Built by Cod3BlackAgency** | Production software, documentation included.
+**Cod3Black Agency — verified capability, high-leverage execution, reusable systems.**
