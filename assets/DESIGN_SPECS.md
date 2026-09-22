@@ -59,13 +59,21 @@ Visual identity specifications for GitHub profile and repositories.
 +--------------------------------------------------+
 ```
 
-**Per-repo customization**:
-- sd-studio-web: "AI Image Generation Interface"
-- family-powerhouse: "Family Management Platform"
-- Ownly: "eCommerce Platform"
-- solovibe: "Self-Hosted AI Chat"
-- cba-ai-platform: "AI Development Platform"
-- freelance-dashboard: "Client Management"
+**Current public-system customization**:
+- c3bai: "AI Business Systems & Automation"
+- Gratog: "Taste of Gratitude Commerce & Operations"
+- nhbbi-crm: "Membership & Relationship Operations"
+- asca-pwa: "Association PWA & Admin System"
+- jds-horse-ranch-pwa: "Ranch Customer Experience"
+- cod3blackagency-portfolio: "Verified Systems & Delivery Evidence"
+
+**Retained asset customization**:
+- sd-studio-web: "Remote AI Image Interface"
+- family-powerhouse: "Family Coordination Platform"
+- Ownly: "SaaS Starter Foundation"
+- notionexporterpdf: "Notion PDF Export Utility"
+
+Archived upstream/reference or superseded repositories such as `solovibe` and `cba-ai-platform` should not receive current flagship social-preview treatment.
 
 ---
 
@@ -150,11 +158,12 @@ Or hosted externally:
 
 - [ ] banner.png (1280x640)
 - [ ] og-default.png (1200x630)
-- [ ] og-sd-studio-web.png
-- [ ] og-family-powerhouse.png
-- [ ] og-ownly.png
-- [ ] og-solovibe.png
-- [ ] og-cba-ai-platform.png
+- [ ] og-c3bai.png
+- [ ] og-gratog.png
+- [ ] og-nhbbi-crm.png
+- [ ] og-asca-pwa.png
+- [ ] og-jds-horse-ranch-pwa.png
+- [ ] og-cod3blackagency-portfolio.png
 - [ ] logo-dark.png (text logo on dark)
 - [ ] logo-light.png (text logo on light)
 - [ ] avatar.png (400x400)
