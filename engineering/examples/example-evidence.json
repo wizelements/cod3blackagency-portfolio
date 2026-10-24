@@ -1,0 +1,50 @@
+{
+  "project_id": "example-merchant",
+  "environment": "staging",
+  "release_sha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "run_id": "DEMO-NOT-REAL",
+  "executed_at": "2026-10-24T10:00:00Z",
+  "fixture": true,
+  "gates": {
+    "build": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/build"
+    },
+    "unit": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/unit"
+    },
+    "integration": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/integration"
+    },
+    "security": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/security"
+    },
+    "e2e": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/e2e"
+    },
+    "rollback": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/rollback"
+    },
+    "observability": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/observability"
+    },
+    "payment": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/payment"
+    },
+    "inventory": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/inventory"
+    },
+    "load": {
+      "status": "PASS",
+      "artifact": "DEMO-NOT-VERIFIED/load"
+    }
+  }
+}
