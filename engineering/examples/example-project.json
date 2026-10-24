@@ -1,0 +1,27 @@
+{
+  "project_id": "example-merchant",
+  "name": "Example Merchant (demo only)",
+  "owner": "Cod3Black Engineering",
+  "customer_problem": "Manual merchant order intake and fulfillment",
+  "revenue_metric": "Successfully fulfilled paid orders",
+  "runbook_url": "https://example.invalid/runbook",
+  "data_classification": "confidential",
+  "critical_workflows": [
+    "checkout",
+    "inventory reservation",
+    "fulfillment",
+    "refunds"
+  ],
+  "required_gates": [
+    "build",
+    "unit",
+    "integration",
+    "security",
+    "e2e",
+    "rollback",
+    "observability",
+    "payment",
+    "inventory",
+    "load"
+  ]
+}
