@@ -1,0 +1,33 @@
+name: Engineering Foundation Quality Gate
+on:
+  pull_request:
+    paths:
+      - 'engineering/**'
+      - '.github/workflows/engineering-foundation.yml'
+  push:
+    paths:
+      - 'engineering/**'
+      - '.github/workflows/engineering-foundation.yml'
+permissions:
+  contents: read
+jobs:
+  release-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile
+        run: python -m compileall -q engineering
+      - name: Test policy gates
+        run: python -m unittest discover -s engineering/tests -v
+      - name: Demo fixture MUST be rejected
+        run: |
+          if python engineering/release_gate.py \
+            --manifest engineering/examples/example-project.json \
+            --evidence engineering/examples/example-evidence.json; then
+            echo "ERROR: Demo fixture passed fail-closed gate"
+            exit 1
+          fi
